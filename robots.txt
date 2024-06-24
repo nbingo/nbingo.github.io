@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nbingo.github.io/al-folio/sitemap.xml
+Sitemap: https://nbingo.github.io/sitemap.xml
