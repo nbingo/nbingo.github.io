@@ -1,9 +1,7 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Science":
+  url: https://www.science.org/toc/science/370/6523
+  color: "#CF142B"
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"FOCS24":
+  url: https://focs.computer.org/2024/
+  color: "#23a455"

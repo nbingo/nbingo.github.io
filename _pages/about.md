@@ -21,7 +21,7 @@ Hey! I'm a third year in computer science at Cornell University advised by the
 wonderful [Eshan Chattopadhyay](https://www.cs.cornell.edu/~eshan/). Before
 beginning my PhD, I did my undergrad at Stanford and had a wonderful time
 working in the [Luo Lab](https://luolab.stanford.edu) with
-[Justus Kebschullh](https://www.kebschull-lab.org).
+[Justus Kebschull](https://www.kebschull-lab.org).
 
 While I enjoyed my formative research years in wet lab neurscience, I am
 currently interested in theoretical computer science, specifically complexity
