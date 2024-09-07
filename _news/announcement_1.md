@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-09-5
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I will be presenting at [FOCS 2024](https://focs.computer.org/2024/program/schedule/)
+on our [paper on seedless condensers](https://arxiv.org/abs/2312.15087)!
