@@ -23,7 +23,7 @@ beginning my PhD, I did my undergrad at Stanford and had a wonderful time
 working in the [Luo Lab](https://luolab.stanford.edu) with
 [Justus Kebschull](https://www.kebschull-lab.org).
 
-While I enjoyed my formative research years in wet lab neurscience, I am
+While I enjoyed my formative research years in wet lab neuroscience, I am
 currently interested in theoretical computer science, specifically complexity
 theory, pseudorandomness, and combinatorics.
 
