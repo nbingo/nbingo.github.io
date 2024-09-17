@@ -5,3 +5,7 @@
 "FOCS24":
   url: https://focs.computer.org/2024/
   color: "#23a455"
+
+"arXiv":
+  url: https://arxiv.org
+  color: "#b31b1b"
