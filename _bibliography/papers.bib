@@ -1,32 +1,62 @@
 ---
 ---
 
-@misc{chattopadhyay_two-sided_2024,
-	title = {Two-{Sided} {Lossless} {Expanders} in the {Unbalanced} {Setting}},
-	url = {https://eccc.weizmann.ac.il/report/2024/133/},
-  html = {https://eccc.weizmann.ac.il/report/2024/133/},
-	abstract = {We present the first explicit construction of two-sided lossless expanders in the unbalanced setting  (bipartite graphs that have many more nodes on the left than on the right). Prior to our work, all known explicit constructions in the unbalanced setting achieved only one-sided lossless expansion.
-     Specifically, we show that the one-sided lossless expanders constructed by Kalev and Ta-Shma (RANDOM'22)---that are based on multiplicity codes introduced by Kopparty, Saraf, and Yekhanin (STOC'11)---are, in fact,  two-sided lossless expanders. 
-     Using our unbalanced bipartite expander, we easily obtain lossless (non-bipartite) expander graphs with high degree and a free group action. As far as we know, this is the first explicit construction of lossless (non-bipartite) expanders with N vertices and degree N.},
-	language = {en},
-	urldate = {2024-09-07},
-	publisher = {Electronic Colloquium on Computational Complexity},
-	author = {Chattopadhyay, Eshan and Gurumukhani, Mohit and Ringach, Noam and Zhao, Yunya},
-	month = sep,
-	year = {2024},
+@misc{chattopadhyay2024condensingonlineadversaries,
+      title={Condensing Against Online Adversaries}, 
+      author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach},
+      abstract={We investigate the task of deterministically condensing randomness from Online Non-Oblivious Symbol Fixing (oNOSF) sources, a natural model for which extraction is impossible [AORSV, EUROCRYPT'20]. A (g,ℓ)-oNOSF source is a sequence of ℓ blocks where at least g of the blocks are good (independent and have some min-entropy) and the remaining bad blocks are controlled by an online adversary where each bad block can be arbitrarily correlated with any block that appears before it.
+The existence of condensers was studied in [CGR, FOCS'24]. They proved condensing impossibility results for various values of g,ℓ and showed the existence of condensers matching the impossibility results in the case when n is extremely large compared to ℓ.
+In this work, we make significant progress on proving the existence of condensers with strong parameters in almost all parameter regimes, even when n is a large enough constant and ℓ is growing. This almost resolves the question of the existence of condensers for oNOSF sources, except when n is a small constant.
+We construct the first explicit condensers for oNOSF sources, achieve parameters that match the existential results of [CGR, FOCS'24], and obtain an improved construction for transforming low-entropy oNOSF sources into uniform ones.
+We find applications of our results to collective coin flipping and sampling, well-studied problems in fault-tolerant distributed computing. We use our condensers to provide simple protocols for these problems.
+To understand the case of small n, we focus on n=1 which corresponds to online non-oblivious bit-fixing (oNOBF) sources. We initiate a study of a new, natural notion of influence of Boolean functions which we call online influence. We establish tight bounds on the total online influence of Boolean functions, implying extraction lower bounds.},
+      year={2024},
+      eprint={2411.04115},
+      archivePrefix={arXiv},
+      primaryClass={cs.CC},
+      url={https://arxiv.org/abs/2411.04115}, 
+      html={https://arxiv.org/abs/2411.04115},  
+      pdf={condensing-against-online-adversaries},
+      arxiv={2411.04115},
+      selected={true},
+      bibtex_show={true},
+      abbr={arXiv},
+}
+
+@misc{chattopadhyay2024twosidedlosslessexpandersunbalanced,
+  title={Two-Sided Lossless Expanders in the Unbalanced Setting}, 
+  author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach and Yunya Zhao},
+  year={2024},
+  abstract={We present the first explicit construction of two-sided lossless expanders in the unbalanced setting (bipartite graphs that have many more nodes on the left than on the right). Prior to our work, all known explicit constructions in the unbalanced setting achieved only one-sided lossless expansion. Specifically, we show that the one-sided lossless expanders constructed by Kalev and Ta-Shma (RANDOM'22)--that are based on multiplicity codes introduced by Kopparty, Saraf, and Yekhanin (STOC'11)--are, in fact, two-sided lossless expanders. Using our unbalanced bipartite expander, we easily obtain lossless (non-bipartite) expander graphs on N vertices with polynomial degree and a free group action. As far as we know, this is the first explicit construction of lossless (non-bipartite) expanders with N vertices and degree ≪N.},
+  eprint={2409.04549},
+  archivePrefix={arXiv},
+  primaryClass={cs.CC},
+  url={https://arxiv.org/abs/2409.04549},
+  html={https://arxiv.org/abs/2409.04549},
+  arxiv={2409.04549},
 	note = {ISSN: 1433-8092},
-	keywords = {Coding theory, Combinatorics, condensers, Expander Graphs, Graph Theory, Lossless Expander, multiplicity codes, Pseudorandomness},
-	file = {Full Text PDF:/Users/noamringach/Zotero/storage/SGC6ZRM3/Chattopadhyay et al. - 2024 - Two-Sided Lossless Expanders in the Unbalanced Set.pdf:application/pdf},
+  pdf={two-sided-expanders-unbalanced.pdf},
   selected={true},
   bibtex_show={true},
   abbr={arXiv}
 }
 
 
+
 @INPROCEEDINGS{chattopadhyay2024existenceseedlesscondensersexploring,
   title={On the Existence of Seedless Condensers: Exploring the Terrain}, 
   author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach},
   booktitle={2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS)},
+  abstract={We prove several new results for seedless condensers in the context of three related classes of sources: Non-Oblivious Symbol Fixing (NOSF) sources, online NOSF (oNOSF) sources [AORSV, EUROCRYPT'20], and adversarial Chor-Goldreich (aCG) source [DMOZ, STOC'23]. We think of these sources as a sequence of random variables X=X1,…,Xℓ on ℓ symbols where at least g out of these ℓ symbols are "good" (i.e., have some min-entropy requirement), denoted as a (g,ℓ)-source, and the remaining "bad" ℓ−g symbols may adversarially depend on these g good blocks. The difference between each of these sources is realized by restrictions on the power of the adversary. Prior to our work, the only known seedless condenser upper or lower bound in these settings is due to [DMOZ, STOC'23], where they explicitly construct a seedless condenser for a restricted subset of (g,ℓ)-aCG sources.
+We show:
+1) oNOSF sources
+a) When g≤ℓ/2, we prove that condensing with error 0.99 above rate 1⌊ℓ/g⌋ is impossible. In fact, we show that this is tight.
+b) For g>ℓ/2, we show the existence of excellent condensers for uniform oNOSF sources. In addition, we show the existence of similar condensers for oNOSF sources with only logarithmic min-entropy.
+2) aCG sources
+a) We observe that uniform aCG sources are equivalent to uniform oNOSF sources and consequently inherit the same results.
+b) We show that one cannot condense beyond the min-entropy gap of each block or condense low min-entropy CG sources above rate 1/2.
+3) NOSF sources
+a) We show that condensing with constant error above rate gℓ is impossible for uniform NOSF sources for any g and ℓ, thus ruling out the possibility of any non-trivial condensing. This shows a distinction between NOSF sources and oNOSF sources.},
   year={2024},
   volume={},
   number={},
