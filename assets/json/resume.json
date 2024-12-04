@@ -8,19 +8,13 @@
     "url": "",
     "summary": "A third year PhD student working in pseduorandomness under Eshan Chattopadhyay.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "103 West Sylvan Mews",
+      "postalCode": "NY 14850",
+      "city": "Ithaca",
       "countryCode": "US",
-      "region": "California"
+      "region": "New York"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "profiles": []
   },
   "education": [
     {
@@ -53,9 +47,16 @@
   ],
   "publications": [
     {
+      "name": "Condensing Against Online Adversaries",
+      "publisher": "",
+      "releaseDate": "2024-11",
+      "url": "https://arxiv.org/abs/2411.04115",
+      "summary": "E. Chattopadhyay, M. Gurumukhani, and N. Ringach, “Condensing Against Online Adversaries,” Nov. 06, 2024, arXiv: arXiv:2411.04115. doi: 10.48550/arXiv.2411.04115."
+    },
+    {
       "name": "Two-Sided Lossless Expanders in the Unbalanced Setting",
       "publisher": "",
-      "releaseDate": "2024-09",
+      "releaseDate": "2024-10",
       "url": "https://eccc.weizmann.ac.il/report/2024/133/",
       "summary": "Chattopadhyay, E., Gurumukhani, M., Ringach, N., & Zhao, Y. (2024, September). Two-Sided Lossless Expanders in the Unbalanced Setting. Retrieved from https://eccc.weizmann.ac.il/report/2024/133/"
     },
@@ -72,6 +73,14 @@
       "releaseDate": "2020-09",
       "url": "https://www.science.org/doi/full/10.1126/science.abd5059",
       "summary": "Justus M. Kebschull et al. ,Cerebellar nuclei evolved by repeatedly duplicating a conserved cell-type set. Science 370, eabd5059 (2020). DOI: 10.1126/science.abd5059"
+    }
+  ],
+  "teaching": [
+    {
+      "name": "CS 6158: Software Engineering in the Era of Machine Learning",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "url": "https://www.cs.cornell.edu/~saikatd/courses/cs6158-fa24/schedule.html"
     }
   ]
 }
