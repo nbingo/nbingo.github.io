@@ -5,6 +5,8 @@ title: Teaching
 description: Courses I've TA-ed for
 nav: true
 nav_order: 3
+pagination:
+  enabled: true
 ---
 
 ## Cornell University
