@@ -1,11 +1,11 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: cv
+title: CV
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf
+nav_order: 4
 description:
-toc:
-  sidebar: left
 ---
+
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://nbingo.github.io/assets/pdf/cv.pdf" width="500" height="375">
