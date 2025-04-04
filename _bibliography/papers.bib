@@ -1,15 +1,35 @@
 ---
 ---
 
+@misc{chattopadhyay2025lowerboundsleaderelectioncoinflippingrevisited,
+      title={Lower Bounds for Leader Election and Collective Coin Flipping, Revisited},
+      author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach and Rocco Servedio},
+      abstract={In fault-tolerant distributed computing, two fundamental tasks are collective coin flipping—where processors agree on a common random bit—and leader election—where they designate a leader among themselves.  We study these problems in the full-information model, where processors communicate via a single broadcast channel, have access to private randomness, and face a computationally unbounded adversary that controls some  of the processors. Despite decades of study, key gaps remain in our understanding of the trade-offs between round complexity, communication per player in each round, and adversarial resilience.
+      We make progress by proving new lower bounds for coin flipping protocols, which also imply lower bounds for leader election protocols. Specifically, we show that any $k$-round coin flipping protocol, where each of $\ell$ players sends $1$ bit per round, can be biased by $O(\ell/\log^{(k)}(\ell))$ bad players. For all $k>1$  this strengthens the previous best lower bounds [RSZ, SICOMP 2002], which   ruled out protocols resilient to adversaries controlling $O(\ell / \log^{(2k-1)}(\ell))$ players. As a consequence, we establish that any protocol tolerating a linear fraction of corrupt players, while restricting player messages to 1 bit per round, must run for at least $\log^* \ell - O(1)$  rounds, improving on the prior best lower bound of $\frac{1}{2} \log^* \ell - \log^* \log^* \ell$. This lower bound also matches the number of rounds, $\log^*\ell$, taken by the current best coin flipping protocols from [RZ, JCSS 2001], [F, FOCS 1999] that can handle a linear sized coalition of bad players, given the additional freedom that players can send unlimited bits per round. We also extend our techniques to derive lower bounds for protocols allowing multi-bit messages per round. Our results show that the protocols from [RZ, JCSS 2001], [F, FOCS 1999] that handle a linear number of corrupt players are almost optimal in terms of round complexity and communication per player  in a round. 
+      A key technical ingredient  in proving our lower bounds is a new result regarding biasing most functions from a family of functions using a   common set of bad players and a small specialized set of bad players specific to each function that is biased.
+      Complementing our lower bound results, we give improved constant-round coin flipping protocols in the setting that each player can send $1$ bit per round. For example, in the case of two rounds, our protocol can handle $O(\ell/ (\log \ell)(\log\log\ell)^2)$ sized coalition of bad players; this is better than the best one-round protocol (also called a resilient function) by [AL, Combinatorica 1993] in this setting, which can only handle $O(\ell / (\log \ell)^2)$ sized coalition of bad players.},
+      year={2025},
+      eprint={2504.01856},
+      arxiv={2504.01856},
+      archivePrefix={arXiv},
+      primaryClass={cs.CC},
+      url={https://arxiv.org/abs/2504.01856},
+      html={https://arxiv.org/abs/2504.01856},
+      pdf={lower_bounds_leader_coin_revisited.pdf},
+      selected={true},
+      bibtex_show={true},
+      abbr={arXiv},
+}
+
 @misc{chattopadhyay2024condensingonlineadversaries,
-      title={Condensing Against Online Adversaries}, 
-      author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach},
-      abstract={We investigate the task of deterministically condensing randomness from Online Non-Oblivious Symbol Fixing (oNOSF) sources, a natural model for which extraction is impossible [AORSV, EUROCRYPT'20]. A (g,ℓ)-oNOSF source is a sequence of ℓ blocks where at least g of the blocks are good (independent and have some min-entropy) and the remaining bad blocks are controlled by an online adversary where each bad block can be arbitrarily correlated with any block that appears before it.
-The existence of condensers was studied in [CGR, FOCS'24]. They proved condensing impossibility results for various values of g,ℓ and showed the existence of condensers matching the impossibility results in the case when n is extremely large compared to ℓ.
-In this work, we make significant progress on proving the existence of condensers with strong parameters in almost all parameter regimes, even when n is a large enough constant and ℓ is growing. This almost resolves the question of the existence of condensers for oNOSF sources, except when n is a small constant.
-We construct the first explicit condensers for oNOSF sources, achieve parameters that match the existential results of [CGR, FOCS'24], and obtain an improved construction for transforming low-entropy oNOSF sources into uniform ones.
-We find applications of our results to collective coin flipping and sampling, well-studied problems in fault-tolerant distributed computing. We use our condensers to provide simple protocols for these problems.
-To understand the case of small n, we focus on n=1 which corresponds to online non-oblivious bit-fixing (oNOBF) sources. We initiate a study of a new, natural notion of influence of Boolean functions which we call online influence. We establish tight bounds on the total online influence of Boolean functions, implying extraction lower bounds.},
+      title={Condensing and Extracting Against Online Adversaries}, 
+      author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach and Rocco Servedio},
+      abstract={We investigate the tasks of deterministically condensing and extracting randomness from Online Non-Oblivious Symbol Fixing (oNOSF) sources, a natural model of defective random sources for which it is known that extraction is impossible in many parameter regimes [AORSV, EUROCRYPT'20]. A $(g,\ell)$-oNOSF source is a sequence of $\ell$ blocks $\mathbf{X} = (\mathbf{X}_1, \dots, \mathbf{X}_{\ell})\sim (\{0, 1\}^{n})^{\ell}$, where at least $g$ of the blocks are \emph{good} (are independent and have some min-entropy), and the remaining \emph{bad} blocks are controlled by an \emph{online adversary} where each bad block can be arbitrarily correlated with any block that appears before it. 
+        The existence of condensers (in regimes where extraction is impossible) was recently studied in [CGR, FOCS'24]. They proved condensing impossibility results for various values of $g$ and $\ell$, and they showed the existence of condensers matching the impossibility results in the special case when $n$ is extremely large compared to $\ell$ (i.e., the setting of few blocks of large length).
+        this work, we make significant progress on proving the existence of condensers with strong parameters in almost all parameter regimes, even when $n$ is a large enough constant and $\ell$ is growing. This almost resolves the question of the existence of condensers for oNOSF sources, except when $n$ is a small constant.
+        As our next result, we construct the first explicit condensers for oNOSF sources and achieve parameters that match the existential results of [CGR, FOCS'24]. We also obtain a much improved construction for transforming low-entropy oNOSF sources (where the good blocks only have min-entropy, as opposed to being uniform) into uniform oNOSF sources. 
+        We find interesting connections and applications of our results on condensers to collective coin flipping and collective sampling, problems that are well-studied in fault-tolerant distributed computing. We use our condensers to provide very simple protocols for these problems. 
+        Next, we turn to understanding the possibility of extraction from oNOSF sources. For proving lower bounds, we introduce and initiate a systematic study of a new, natural notion of the influence of  functions, which we call \emph{online influence}, and believe is of independent interest. Using tools from  Fourier analysis, we establish tight bounds on the total online influence of  functions, which imply extraction lower bounds. Lastly, we give explicit extractor constructions for oNOSF sources, using novel connections to leader election protocols, and further constructing the required leader election protocols. These extractor constructions achieve parameters that go beyond standard resilient functions [AL, Combinatorica'93].},
       year={2024},
       eprint={2411.04115},
       archivePrefix={arXiv},
