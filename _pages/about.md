@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hey! I'm a third year Ph.D. candidate in computer science at Cornell University advised by the
+Hey! I'm a fourth year Ph.D. candidate in computer science at Cornell University advised by the
 wonderful [Eshan Chattopadhyay](https://www.cs.cornell.edu/~eshan/). Before
 beginning my PhD, I did my undergrad in math and master's in CS at Stanford.
 I had a great time working in the [Luo Lab](https://luolab.stanford.edu) with
