@@ -11,7 +11,7 @@ nav_order: 3
 
 ### Graduate Teaching Assistant
 
-- **Spring 2025-25** -- [CS 6802/MATH 6302: Lattices: Geometry, Cryptography, and Algorithms](https://classes.cornell.edu/browse/roster/SP25/class/CS/6802)
+- **Spring 2024-25** -- [CS 6802/MATH 6302: Lattices: Geometry, Cryptography, and Algorithms](https://classes.cornell.edu/browse/roster/SP25/class/CS/6802)
 
 - **Fall 2024-25** -- [CS 6158: Software Engineering in the Era of Machine Learning](https://www.cs.cornell.edu/~saikatd/courses/cs6158-fa24/schedule.html)
 
