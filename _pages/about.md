@@ -24,8 +24,10 @@ I had a great time working in the [Luo Lab](https://luolab.stanford.edu) with
 [Justus Kebschull](https://www.kebschull-lab.org).
 
 While I enjoyed my formative research years in wet lab neuroscience, I am
-currently interested in theoretical computer science, specifically complexity
-theory, pseudorandomness, and combinatorics. My recent work is mainly on
+currently interested in theoretical computer science, specifically pseudorandomness, combinatorics, and complexity
+theory. My recent work is mainly on
 condensing from adversarial sources, lossless expansion in bipartite graphs,
 and coin flipping/leader election protocols,
 but who knows where my interests will take me in the future!
+
+I am grateful to be supported by the NSF GRFP (DGE – 2139899).
