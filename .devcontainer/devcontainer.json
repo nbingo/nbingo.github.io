@@ -2,7 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
   "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
+  // Using a Dockerfile to fix the broken Yarn repository. See issue #3487.
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
@@ -12,8 +15,8 @@
     "ghcr.io/devcontainers-extra/features/prettier:1.0.2": {}
   },
 
-  // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
-  "postAttachCommand": "./bin/entry_point.sh",
+  // Start Jekyll in the background so the Dev Containers lifecycle hook can finish.
+  "postAttachCommand": "JEKYLL_ENV=development JEKYLL_CONFIG=_config.yml,_config_dev.yml JEKYLL_DESTINATION=/tmp/jekyll-site nohup ./bin/entry_point.sh >/tmp/jekyll-serve.log 2>&1 &",
 
   "customizations": {
     "vscode": {

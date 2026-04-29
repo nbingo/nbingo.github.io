@@ -4,6 +4,13 @@ set -euo pipefail
 echo "Entry point script running"
 
 CONFIG_FILE=_config.yml
+JEKYLL_CONFIG=${JEKYLL_CONFIG:-_config.yml}
+JEKYLL_DESTINATION=${JEKYLL_DESTINATION:-_site}
+
+if pgrep -f "jekyll serve .*--port=8080" > /dev/null; then
+    echo "Jekyll is already running"
+    exit 0
+fi
 
 # Function to manage Gemfile.lock
 manage_gemfile_lock() {
@@ -21,7 +28,7 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     # manage_gemfile_lock
-    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
+    bundle exec jekyll serve --config="$JEKYLL_CONFIG" --destination="$JEKYLL_DESTINATION" --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
 }
 
 start_jekyll
