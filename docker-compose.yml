@@ -19,3 +19,5 @@ services:
       - .:/srv/jekyll
     environment:
       - JEKYLL_ENV=development
+      - JEKYLL_CONFIG=_config.yml,_config_dev.yml
+      - JEKYLL_DESTINATION=/tmp/jekyll-site
