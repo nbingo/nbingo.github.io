@@ -56,6 +56,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Manuscripts -->
+    {% if page.manuscripts %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Manuscripts</a>
+      </h2>
+      {% include manuscripts.liquid %}
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>

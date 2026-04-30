@@ -13,6 +13,7 @@ profile:
     <p>Gates 336</p>
 
 news: true # includes a list of news items
+manuscripts: true # includes a list of manuscripts marked as "manuscript={true}"
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
