@@ -9,3 +9,7 @@
 "arXiv":
   url: https://arxiv.org
   color: "#b31b1b"
+
+"STOC26":
+  url: https://stoc.acm.org/2026/
+  color: "#1a73e8"
