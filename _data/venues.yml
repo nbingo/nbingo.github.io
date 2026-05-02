@@ -13,3 +13,7 @@
 "STOC26":
   url: https://stoc.acm.org/2026/
   color: "#1a73e8"
+
+"CCC26":
+  url: https://computationalcomplexity.org/Archive/2026/
+  color: "#F26657"

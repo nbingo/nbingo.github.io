@@ -31,7 +31,7 @@
       abbr={STOC26},
 }
 
-@misc{chattopadhyay2024condensingonlineadversaries,
+@INPROCEEDINGS{chattopadhyay2024condensingonlineadversaries,
       title={Condensing and Extracting Against Online Adversaries}, 
       author={Eshan Chattopadhyay and Mohit Gurumukhani and Noam Ringach and Rocco Servedio},
       abstract={We investigate the tasks of deterministically condensing and extracting randomness from Online Non-Oblivious Symbol Fixing (oNOSF) sources, a natural model of defective random sources for which it is known that extraction is impossible in many parameter regimes [AORSV, EUROCRYPT'20]. A $(g,\ell)$-oNOSF source is a sequence of $\ell$ blocks $\mathbf{X} = (\mathbf{X}_1, \dots, \mathbf{X}_{\ell})\sim (\{0, 1\}^{n})^{\ell}$, where at least $g$ of the blocks are \emph{good} (are independent and have some min-entropy), and the remaining \emph{bad} blocks are controlled by an \emph{online adversary} where each bad block can be arbitrarily correlated with any block that appears before it. 
@@ -40,18 +40,23 @@
         As our next result, we construct the first explicit condensers for oNOSF sources and achieve parameters that match the existential results of [CGR, FOCS'24]. We also obtain a much improved construction for transforming low-entropy oNOSF sources (where the good blocks only have min-entropy, as opposed to being uniform) into uniform oNOSF sources. 
         We find interesting connections and applications of our results on condensers to collective coin flipping and collective sampling, problems that are well-studied in fault-tolerant distributed computing. We use our condensers to provide very simple protocols for these problems. 
         Next, we turn to understanding the possibility of extraction from oNOSF sources. For proving lower bounds, we introduce and initiate a systematic study of a new, natural notion of the influence of  functions, which we call \emph{online influence}, and believe is of independent interest. Using tools from  Fourier analysis, we establish tight bounds on the total online influence of  functions, which imply extraction lower bounds. Lastly, we give explicit extractor constructions for oNOSF sources, using novel connections to leader election protocols, and further constructing the required leader election protocols. These extractor constructions achieve parameters that go beyond standard resilient functions [AL, Combinatorica'93].},
-      year={2024},
+      year={2026},
       eprint={2411.04115},
+      publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+      address = {Dagstuhl, DEU},
+      booktitle = {Computational Complexity Conference (CCC)},
       archivePrefix={arXiv},
       primaryClass={cs.CC},
       url={https://arxiv.org/abs/2411.04115}, 
       html={https://arxiv.org/abs/2411.04115},  
       pdf={condensing-against-online-adversaries.pdf},
+      location = {Lisbon, Portugal},
+      series = {CCC'26},
       arxiv={2411.04115},
-      manuscript={true},
+      manuscript={false},
       selected={true},
       bibtex_show={true},
-      abbr={arXiv},
+      abbr={CCC26},
 }
 
 @misc{chattopadhyay2024twosidedlosslessexpandersunbalanced,
