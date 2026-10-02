@@ -21,3 +21,7 @@
 "servedio":
   - firstname: ["Rocco", "Rocco Servedio"]
     url: https://www.cs.columbia.edu/~rocco/
+
+"spooner":
+  - firstname: ["Nicholas", "Nick", "Nicholas Spooner"]
+    url: https://spooner.cc/
